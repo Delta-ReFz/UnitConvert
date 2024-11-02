@@ -4,16 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double resp3 = 0;
-
-        String msg1 = "Choose your physical quantities (length, temperature)";
-        System.out.println(msg1);
+        Affichage affichage = new Affichage();
+        Affichage reponse = new Affichage();
 
         Scanner s = new Scanner(System.in);
 
-        String resp1 = s.nextLine();
+        double resp3 = 0;
 
-        if(resp1.equals("length")) {
+        affichage.affichage1();
+        reponse.reponse1();
+
+        if(reponse.resp1.equals("length")) {
             System.out.println("You have chosen the length, decide which units you want to convert (km,m,cm,mm)");
 
             String resp2 = s.nextLine();
