@@ -6,6 +6,11 @@ public class Algorythmes {
     Affichage reponse = new Affichage();
     Scanner s = new Scanner(System.in);
 
+    public Algorythmes(Affichage reponse) {
+
+        this.reponse = reponse;
+    }
+
     public void conversion() {
 
         if(reponse.resp1.equals("length")) {

@@ -6,7 +6,7 @@ public class Main {
 
         Affichage affichage = new Affichage();
         Affichage reponse = new Affichage();
-        Algorythmes convert = new Algorythmes();
+        Algorythmes convert = new Algorythmes(reponse);
 
         Scanner s = new Scanner(System.in);
 
