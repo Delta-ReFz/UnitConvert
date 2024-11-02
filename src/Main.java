@@ -4,7 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String msg1 = "Choose your physical quantities:";
+        double resp3 = 0;
+
+        String msg1 = "Choose your physical quantities (length, temperature)";
         System.out.println(msg1);
 
         Scanner s = new Scanner(System.in);
@@ -12,19 +14,20 @@ public class Main {
         String resp1 = s.nextLine();
 
         if(resp1.equals("length")) {
-            System.out.println("you have chosen the length, decide which units you want to convert to: ");
+            System.out.println("You have chosen the length, decide which units you want to convert (km,m,cm,mm)");
 
             String resp2 = s.nextLine();
 
             if(resp2.equals("m")) {
 
-                System.out.println("Chose the unit you want to convert your meters into: ");
+                System.out.println("Enter the number of meters you want to convert:");
 
-                int resp3 = s.nextInt();
+                resp3 = s.nextInt();
+                s.nextLine();
 
                 if(resp3 >= 0) {
 
-                    System.out.println("Decide which units you want to convert to:");
+                    System.out.println("Decide which units you want to convert your meters to (km,m,cm,mm)");
 
                     String resp4 = s.nextLine();
 
@@ -33,13 +36,9 @@ public class Main {
                         resp3 = resp3 /1000;
 
                         System.out.println(resp3 + "km");
-
                     }
                 }
-
-
             }
-
         }
 
         else {
