@@ -6,6 +6,7 @@ public class Affichage {
 
     public String msg1;
     public String resp1;
+    public String resp2;
 
     Scanner s = new Scanner(System.in);
 
@@ -27,7 +28,7 @@ public class Affichage {
 
         if (resp1.equals("Length")) {
             System.out.println("You have chosen the length, decide which units you want to convert (km,m,cm,mm)");
-            String resp2 = s.nextLine();
+            resp2 = s.nextLine();
             algorythmes.converter();
         }
     }

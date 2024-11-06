@@ -8,7 +8,7 @@ public class Algorythmes {
     Affichage reponse;
     Scanner s = new Scanner(System.in);
 
-    private Affichage affichage;
+    Affichage affichage;
 
     public Algorythmes(Affichage reponse) {
 
@@ -23,7 +23,7 @@ public class Algorythmes {
 
     public  void converter() {
 
-        if (resp2.equals("m")) {
+        if (affichage.resp2.equals("m")) {
             System.out.println("Enter the number of meters you want to convert:");
             resp3 = s.nextDouble();
             s.nextLine();
