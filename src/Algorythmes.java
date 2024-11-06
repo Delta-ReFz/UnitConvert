@@ -13,20 +13,20 @@ public class Algorythmes {
 
     public void conversion() {
 
-        if(reponse.resp1.equals("length")) {
+        length();
+
+    }
+
+    public void length() {
+
+        if(reponse.resp1.equals("Length")) {
             System.out.println("You have chosen the length, decide which units you want to convert (km,m,cm,mm)");
-
             String resp2 = s.nextLine();
-
             if(resp2.equals("m")) {
-
                 System.out.println("Enter the number of meters you want to convert:");
-
                 resp3 = s.nextInt();
                 s.nextLine();
-
                 if(resp3 >= 0) {
-
                     System.out.println("Decide which units you want to convert your meters to (km,m,cm,mm)");
 
                     String resp4 = s.nextLine();
@@ -40,10 +40,11 @@ public class Algorythmes {
                 }
             }
         }
-
         else {
             System.out.println("you chose something else");
         }
+
+
     }
 
 }

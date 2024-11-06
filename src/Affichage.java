@@ -9,7 +9,7 @@ public class Affichage {
 
     public void affichage1() {
 
-        msg1 = "Choose your physical quantities (length, temperature)";
+        msg1 = "Choose your physical quantities (Length, Temperature, Mass)";
         System.out.println(msg1);
 
     }
