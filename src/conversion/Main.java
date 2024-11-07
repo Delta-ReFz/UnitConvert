@@ -14,9 +14,6 @@ public class Main {
         affichage.setAlgorythmes(convert);
 
         affichage.affichage1();
-        affichage.reponse1();
-
-        convert.conversion();
 
     }
 

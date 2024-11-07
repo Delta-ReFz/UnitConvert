@@ -21,6 +21,7 @@ public class Affichage {
 
         msg1 = "Choose your physical quantities (Length, Temperature, Mass)";
         System.out.println(msg1);
+        reponse1();
     }
 
     public void reponse1() {
