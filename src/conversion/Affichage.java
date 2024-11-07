@@ -12,6 +12,11 @@ public class Affichage {
 
     private Algorythmes algorythmes;
 
+    public void setAlgorythmes(Algorythmes algorythmes) {
+
+        this.algorythmes = algorythmes;
+    }
+
     public void affichage1() {
 
         msg1 = "Choose your physical quantities (Length, Temperature, Mass)";

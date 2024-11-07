@@ -11,6 +11,8 @@ public class Main {
 
         Scanner s = new Scanner(System.in);
 
+        affichage.setAlgorythmes(convert);
+
         affichage.affichage1();
         affichage.reponse1();
 
