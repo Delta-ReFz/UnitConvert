@@ -27,16 +27,19 @@ public class Affichage {
     public void reponse1() {
 
         resp1 = s.nextLine();
-        length();
+
+        if(resp1.equals("Length")) {
+            length();
+        }
+
     }
 
     public void length() {
 
-        if (resp1.equals("Length")) {
             System.out.println("You have chosen the length, decide which units you want to convert (km,m,cm,mm)");
             resp2 = s.nextLine();
             algorythmes.converter();
-        }
+
     }
 
 
