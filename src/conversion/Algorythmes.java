@@ -14,8 +14,7 @@ public class Algorythmes {
         this.reponse = reponse;
     }
 
-
-    public void converter() {
+    public void convertm() {
 
         if (reponse.resp2.equals("m")) {
             System.out.println("Enter the number of meters you want to convert:");
@@ -51,6 +50,10 @@ public class Algorythmes {
                 }
             }
         }
+    }
+
+    public void convertKm() {
+
         if (reponse.resp2.equals("km")) {
 
             System.out.println("Enter the number of kilometers you want to convert:");
@@ -83,6 +86,11 @@ public class Algorythmes {
             }
 
         }
+
+    }
+
+    public void convertcm() {
+
         if (reponse.resp2.equals("cm")) {
 
             System.out.println("Enter the number of centimeters you want to convert:");
@@ -116,6 +124,10 @@ public class Algorythmes {
 
             }
         }
+    }
+
+    public void convertmm() {
+
         if(reponse.resp2.equals("mm")) {
 
             System.out.println("Enter the number of millimiters you want to convert:");
@@ -151,6 +163,15 @@ public class Algorythmes {
 
 
         }
+    }
+
+    public void converter() {
+
+        convertm();
+        convertKm();
+        convertcm();
+        convertmm();
+
     }
 }
 
