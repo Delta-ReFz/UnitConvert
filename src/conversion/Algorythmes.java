@@ -14,6 +14,29 @@ public class Algorythmes {
         this.reponse = reponse;
     }
 
+    public void convertK() {
+
+        if (reponse.resp2.equals("K")) {
+            System.out.println("Enter the number of Kelvin you want to convert:");
+            resp3 = s.nextDouble();
+            s.nextLine();
+            if (resp3 >= 0) {
+                System.out.println("Decide which units you want to convert your Kelvins to (C)");
+
+                String resp4 = s.nextLine();
+
+                if (resp4.equals("C")) {
+
+                    resp3 = resp3 - 273.15;
+
+                    System.out.println(resp3 + "Celsius");
+                }
+
+            }
+        }
+
+    }
+
     public void convertm() {
 
         if (reponse.resp2.equals("m")) {
@@ -171,6 +194,7 @@ public class Algorythmes {
         convertKm();
         convertcm();
         convertmm();
+        convertK();
 
     }
 }

@@ -32,6 +32,10 @@ public class Affichage {
             length();
         }
 
+        if(resp1.equals("Temperature")) {
+            temperature();
+        }
+
     }
 
     public void length() {
@@ -40,6 +44,13 @@ public class Affichage {
             resp2 = s.nextLine();
             algorythmes.converter();
 
+    }
+
+    public void temperature() {
+
+        System.out.println("You have chosen the temperature, decide which units you want to convert (K or C)");
+        resp2 = s.nextLine();
+        algorythmes.converter();
     }
 
 
