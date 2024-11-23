@@ -17,7 +17,7 @@ public class Algorythmes {
     public void converter() {
 
         convertm();
-        convertKm();
+        convertkm();
         convertcm();
         convertmm();
         convertK();
@@ -34,9 +34,9 @@ public class Algorythmes {
             if (resp3 >= 0) {
                 System.out.println("Decide which units you want to convert your Kelvins to (C)");
 
-                String resp4 = s.nextLine();
+                String resp4 = s.nextLine().toLowerCase();
 
-                if (resp4.equals("C")) {
+                if (resp4.equals("c")) {
 
                     resp3 = resp3 - 273.15;
 
@@ -57,7 +57,7 @@ public class Algorythmes {
             if (resp3 >= 0) {
                 System.out.println("Decide which units you want to convert your Celsius to (K)");
 
-                String resp4 = s.nextLine();
+                String resp4 = s.nextLine().toLowerCase();
 
                 if (resp4.equals("C")) {
 
@@ -80,7 +80,7 @@ public class Algorythmes {
             if (resp3 >= 0) {
                 System.out.println("Decide which units you want to convert your meters to (km,m,cm,mm)");
 
-                String resp4 = s.nextLine();
+                String resp4 = s.nextLine().toLowerCase();
 
                 if (resp4.equals("km")) {
 
@@ -109,7 +109,7 @@ public class Algorythmes {
         }
     }
 
-    public void convertKm() {
+    public void convertkm() {
 
         if (reponse.resp2.equals("km")) {
 
@@ -119,7 +119,7 @@ public class Algorythmes {
             if (resp3 >= 0) {
                 System.out.println("Decide which units you want to convert your kilometers to (km,m,cm,mm)");
 
-                String resp4 = s.nextLine();
+                String resp4 = s.nextLine().toLowerCase();
 
                 if (resp4.equals("m")) {
 
@@ -156,7 +156,7 @@ public class Algorythmes {
             if (resp3 >= 0) {
                 System.out.println("Decide which units you want to convert your centimeters to (km,m,cm,mm)");
 
-                String resp4 = s.nextLine();
+                String resp4 = s.nextLine().toLowerCase();
 
                 if (resp4.equals("m")) {
 
@@ -195,7 +195,7 @@ public class Algorythmes {
 
                 System.out.println("Decide which units you want to convert your millimeters to (km,m,cm,mm)");
 
-                String resp4 = s.nextLine();
+                String resp4 = s.nextLine().toLowerCase();
 
                 if (resp4.equals("m")) {
 

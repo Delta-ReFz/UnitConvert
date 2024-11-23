@@ -28,15 +28,15 @@ public class Affichage {
 
         resp1 = s.nextLine();
 
-        if(resp1.equals("Length")) {
+        if(resp1.equals("length")) {
             length();
         }
 
-        if(resp1.equals("Temperature")) {
+        if(resp1.equals("temperature")) {
             temperature();
         }
 
-        if(resp1.equals("Mass")) {
+        if(resp1.equals("mass")) {
             mass();
         }
 
@@ -44,8 +44,8 @@ public class Affichage {
 
     public void length() {
 
-            System.out.println("You have chosen the length, decide which units you want to convert (miles, feet, inches, km,m,cm,mm,um,nm,pm)");
-            resp2 = s.nextLine();
+            System.out.println("You have chosen the length, decide which units you want to convert (miles,feet,inches,km,m,cm,mm,um,nm,pm)");
+            resp2 = s.nextLine().toLowerCase();
             algorythmes.converter();
 
     }
@@ -53,14 +53,14 @@ public class Affichage {
     public void temperature() {
 
         System.out.println("You have chosen the temperature, decide which units you want to convert (K or C)");
-        resp2 = s.nextLine();
+        resp2 = s.nextLine().toLowerCase();
         algorythmes.converter();
     }
 
     public void mass() {
 
         System.out.println("You have chosen the mass, decide which units you want to convert (Kg,g,cg,mg)");
-        resp2 = s.nextLine();
+        resp2 = s.nextLine().toLowerCase();
         algorythmes.converter();
 
     }
