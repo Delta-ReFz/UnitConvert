@@ -19,7 +19,7 @@ public class Affichage {
 
     public void affichage1() {
 
-        msg1 = "Choose your physical quantities (Length, Temperature, Mass)";
+        msg1 = "Choose your physical quantities (Length, Area, Force, Currency, Time, Volume, Temperature, Mass)";
         System.out.println(msg1);
         reponse1();
     }
@@ -36,11 +36,15 @@ public class Affichage {
             temperature();
         }
 
+        if(resp1.equals("Mass")) {
+            mass();
+        }
+
     }
 
     public void length() {
 
-            System.out.println("You have chosen the length, decide which units you want to convert (km,m,cm,mm)");
+            System.out.println("You have chosen the length, decide which units you want to convert (miles, feet, inches, km,m,cm,mm,um,nm,pm)");
             resp2 = s.nextLine();
             algorythmes.converter();
 
@@ -51,6 +55,14 @@ public class Affichage {
         System.out.println("You have chosen the temperature, decide which units you want to convert (K or C)");
         resp2 = s.nextLine();
         algorythmes.converter();
+    }
+
+    public void mass() {
+
+        System.out.println("You have chosen the mass, decide which units you want to convert (Kg,g,cg,mg)");
+        resp2 = s.nextLine();
+        algorythmes.converter();
+
     }
 
 
