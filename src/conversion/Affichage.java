@@ -28,40 +28,36 @@ public class Affichage {
 
         resp1 = s.nextLine().toLowerCase();
 
-        if(resp1.equals("length")) {
-            length();
+        switch (resp1) {
+            case "length":
+                length();
+                break;
+            case "temperature":
+                temperature();
+                break;
+            case "mass":
+                mass();
+                break;
+            case "volume":
+                volume();
+                break;
+            case "force":
+                force();
+                break;
+            case "time":
+                time();
+                break;
+            case "area":
+                area();
+                break;
+            case "currency":
+                currency();
+                break;
+            default:
+                System.out.println("Invalid choice. Please choose a valid quantity.");
+                affichage1();
+                break;
         }
-
-        if(resp1.equals("temperature")) {
-            temperature();
-        }
-
-        if(resp1.equals("mass")) {
-            mass();
-        }
-
-        if(resp1.equals("volume")) {
-            volume();
-        }
-
-        if(resp1.equals("force")) {
-            force();
-        }
-
-        if(resp1.equals("time")) {
-            time();
-        }
-
-        if(resp1.equals("area")) {
-            area();
-        }
-
-        if(resp1.equals("currency")) {
-            currency();
-        }
-
-
-
     }
 
     public void length() {

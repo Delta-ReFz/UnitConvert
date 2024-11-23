@@ -22,7 +22,9 @@ public class Algorythmes {
         convertmm();
         convertK();
         convertC();
-        cnvertum();
+        convertum();
+        convertnm();
+        convertpm();
 
     }
 
