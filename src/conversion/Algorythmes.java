@@ -22,6 +22,7 @@ public class Algorythmes {
         convertmm();
         convertK();
         convertC();
+        cnvertum();
 
     }
 
@@ -193,7 +194,7 @@ public class Algorythmes {
 
             if (resp3 >= 0) {
 
-                System.out.println("Decide which units you want to convert your millimeters to (km,m,cm,mm)");
+                System.out.println("Decide which units you want to convert your millimeters to (km,m,cm,mm,um,nm,pm)");
 
                 String resp4 = s.nextLine().toLowerCase();
 
@@ -216,10 +217,154 @@ public class Algorythmes {
 
                     System.out.println(resp3 + "mm");
                 }
+
+                if (resp4.equals("um")) {
+
+                    resp3 *= 1000;
+                    System.out.println(resp3 + "um");
+                }
+
+                if (resp4.equals("nm")) {
+
+                    resp3 *= 1000000;
+                    System.out.println(resp3 + "nm");
+                }
             }
 
 
         }
+    }
+
+    public void convertum() {
+
+        if (reponse.resp2.equals("um")) {
+            System.out.println("Enter the number of micrometers you want to convert:");
+            resp3 = s.nextDouble();
+            s.nextLine();
+
+            if (resp3 >= 0) {
+                System.out.println("Decide which units you want to convert your micrometers to (km, m, cm, mm, um, nm, pm)");
+
+                String resp4 = s.nextLine().toLowerCase();
+
+                if (resp4.equals("m")) {
+                    resp3 = resp3 / 1_000_000;
+                    System.out.println(resp3 + "m");
+                }
+                if (resp4.equals("km")) {
+                    resp3 = resp3 / 1_000_000_000;
+                    System.out.println(resp3 + "km");
+                }
+                if (resp4.equals("cm")) {
+                    resp3 = resp3 / 10_000;
+                    System.out.println(resp3 + "cm");
+                }
+                if (resp4.equals("mm")) {
+                    resp3 = resp3 / 1_000;
+                    System.out.println(resp3 + "mm");
+                }
+                if (resp4.equals("um")) {
+                    System.out.println(resp3 + "um");
+                }
+                if (resp4.equals("nm")) {
+                    resp3 *= 1_000;
+                    System.out.println(resp3 + "nm");
+                }
+                if (resp4.equals("pm")) {
+                    resp3 *= 1_000_000;
+                    System.out.println(resp3 + "pm");
+                }
+            }
+        }
+
+    }
+
+    public void convertnm() {
+
+        if (reponse.resp2.equals("nm")) {
+            System.out.println("Enter the number of nanometers you want to convert:");
+            resp3 = s.nextDouble();
+            s.nextLine();
+
+            if (resp3 >= 0) {
+                System.out.println("Decide which units you want to convert your nanometers to (km, m, cm, mm, um, nm, pm)");
+
+                String resp4 = s.nextLine().toLowerCase();
+
+                if (resp4.equals("m")) {
+                    resp3 = resp3 / 1_000_000_000;
+                    System.out.println(resp3 + "m");
+                }
+                if (resp4.equals("km")) {
+                    resp3 = resp3 / 1_000_000_000_000L;
+                    System.out.println(resp3 + "km");
+                }
+                if (resp4.equals("cm")) {
+                    resp3 = resp3 / 10_000_000;
+                    System.out.println(resp3 + "cm");
+                }
+                if (resp4.equals("mm")) {
+                    resp3 = resp3 / 1_000_000;
+                    System.out.println(resp3 + "mm");
+                }
+                if (resp4.equals("um")) {
+                    resp3 = resp3 / 1_000;
+                    System.out.println(resp3 + "um");
+                }
+                if (resp4.equals("nm")) {
+                    System.out.println(resp3 + "nm");
+                }
+                if (resp4.equals("pm")) {
+                    resp3 *= 1_000;
+                    System.out.println(resp3 + "pm");
+                }
+            }
+        }
+
+    }
+
+    public void convertpm() {
+
+        if (reponse.resp2.equals("pm")) {
+            System.out.println("Enter the number of picometers you want to convert:");
+            resp3 = s.nextDouble();
+            s.nextLine();
+
+            if (resp3 >= 0) {
+                System.out.println("Decide which units you want to convert your picometers to (km, m, cm, mm, um, nm, pm)");
+
+                String resp4 = s.nextLine().toLowerCase();
+
+                if (resp4.equals("m")) {
+                    resp3 = resp3 / 1_000_000_000_000L;
+                    System.out.println(resp3 + "m");
+                }
+                if (resp4.equals("km")) {
+                    resp3 = resp3 / 1_000_000_000_000_000L;
+                    System.out.println(resp3 + "km");
+                }
+                if (resp4.equals("cm")) {
+                    resp3 = resp3 / 10_000_000_000L;
+                    System.out.println(resp3 + "cm");
+                }
+                if (resp4.equals("mm")) {
+                    resp3 = resp3 / 1_000_000_000L;
+                    System.out.println(resp3 + "mm");
+                }
+                if (resp4.equals("um")) {
+                    resp3 = resp3 / 1_000_000;
+                    System.out.println(resp3 + "um");
+                }
+                if (resp4.equals("nm")) {
+                    resp3 = resp3 / 1_000;
+                    System.out.println(resp3 + "nm");
+                }
+                if (resp4.equals("pm")) {
+                    System.out.println(resp3 + "pm");
+                }
+            }
+        }
+
     }
 
 }
