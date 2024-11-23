@@ -26,7 +26,7 @@ public class Affichage {
 
     public void reponse1() {
 
-        resp1 = s.nextLine();
+        resp1 = s.nextLine().toLowerCase();
 
         if(resp1.equals("length")) {
             length();
@@ -39,6 +39,28 @@ public class Affichage {
         if(resp1.equals("mass")) {
             mass();
         }
+
+        if(resp1.equals("volume")) {
+            volume();
+        }
+
+        if(resp1.equals("force")) {
+            force();
+        }
+
+        if(resp1.equals("time")) {
+            time();
+        }
+
+        if(resp1.equals("area")) {
+            area();
+        }
+
+        if(resp1.equals("currency")) {
+            currency();
+        }
+
+
 
     }
 
@@ -65,5 +87,30 @@ public class Affichage {
 
     }
 
+    public void volume() {
+
+    }
+
+    public void force() {
+
+
+    }
+
+    public void time() {
+
+
+    }
+
+    public void area() {
+
+
+    }
+
+    public void currency() {
+
+
+    }
+
+    
 
 }
